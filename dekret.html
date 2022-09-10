@@ -1,0 +1,235 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Մայրության նպաստի հաշվիչ</title>
+      <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+      <section class="calc-body">
+        <form action="">
+          <div>
+            <label for="mikro-opt">Միկրոձեռնարկատիրություն</label>
+            <select id="mikro-opt" name="mikro-opt" onchange="optional()">
+              <option value="yes">Այո</option>
+              <option value="no">Ոչ</option>
+            </select>
+          </div>
+          <div>
+            <label for="date-start"
+              >Ժամանակավոր անաշխատունակության սկիզբը</label
+            >
+            <input
+              type="date"
+              name="date-start"
+              id="date-start"
+              oninput="optional()"
+            />
+          </div>
+          <div>
+            <label for="date-end">Ժամանակավոր անաշխատունակության ավարտը</label>
+            <input
+              type="date"
+              name="date-end"
+              id="date-end"
+              oninput="optional()"
+            />
+          </div>
+          <div>
+            <label for="num-of-days"
+              >Ժամանակավոր անաշխատունակության օրերի թիվը</label
+            >
+            <input type="number" name="num-od-days" id="num-of-days" readonly />
+            <p>
+              Ժամանակավոր անաշխատունակության օրերի թիվը չի կարող լինել փոքր
+              140-ից և մեծ 155-ից
+            </p>
+          </div>
+        </form>
+        <table>
+          <tr>
+            <th>Նպաստի հաշվարկման տարին</th>
+            <th>Նպաստի հաշվարկման ամիսը</th>
+            <th>
+              գործատուի կողմից վարձու աշխատողին վճարված (վճարման ենթակա) ամսական
+              եկամուտը
+            </th>
+          </tr>
+          <tr>
+            <td class="year1">Տարի</td>
+            <td class="month1">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery1 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year2">Տարի</td>
+            <td class="month2">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery2 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year3">Տարի</td>
+            <td class="month3">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery3 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year4">Տարի</td>
+            <td class="month4">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery4 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year5">Տարի</td>
+            <td class="month5">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery5 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year6">Տարի</td>
+            <td class="month6">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery6 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year7">Տարի</td>
+            <td class="month7">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery7 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year8">Տարի</td>
+            <td class="month8">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery8 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year9">Տարի</td>
+            <td class="month9">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery9 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year10">Տարի</td>
+            <td class="month10">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery10 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year11">Տարի</td>
+            <td class="month11">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery11 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="year12">Տարի</td>
+            <td class="month12">Ամիս</td>
+            <td>
+              <input
+                type="number"
+                name="salery"
+                class="salery12 salery"
+                onchange="optional()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><div>Ընդամենը</div></td>
+            <td><div class="sum">0</div></td>
+          </tr>
+        </table>
+        <div class="result-container">
+          <div>
+            <label>Միջին ամսական եկամուտ</label>
+            <input type="number" id="show-month-incom" readonly />
+          </div>
+          <div>
+            <label>Միջին օրական եկամուտ</label>
+            <input type="number" id="show-daily-incom" readonly />
+          </div>
+          <div>
+            <label>Նպաստի հաշվարկային չափը</label>
+            <input type="number" id="show-npast" readonly />
+          </div>
+          <div>
+            <label>Եկամտային հարկ</label>
+            <input type="number" id="show-ekamtayin-hark" readonly />
+          </div>
+          <div>
+            <label>Վճարման ենթակա նպաստ</label>
+            <input type="number" id="show-vjarman-entaka-npast" readonly />
+          </div>
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </body>
+  </html>
+</DOCTYPE>
